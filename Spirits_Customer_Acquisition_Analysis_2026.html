@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Broken Funnel: Why Spirits Customer Acquisition Economics Have Fundamentally Changed</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+  @page { size: letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    max-width: 7.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.6in;
+    overflow-x: hidden;
+  }
+  h1 { font-size: 16pt; font-weight: 700; color: #1b2a4a; margin-bottom: 2px; }
+  .subtitle {
+    font-size: 9pt; color: #5a6a7a;
+    margin-bottom: 14px; border-bottom: 2.5px solid #2c6e8a; padding-bottom: 6px;
+  }
+  h2 {
+    font-size: 12pt; font-weight: 700; color: #1b2a4a;
+    margin: 16px 0 6px 0; border-left: 3px solid #2c6e8a; padding-left: 8px;
+  }
+  h3 { font-size: 10pt; font-weight: 700; color: #2c3e50; margin: 10px 0 3px 0; }
+  p { margin-bottom: 8px; text-align: justify; }
+  .charts {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 10px 0;
+    max-width: 100%; overflow: hidden;
+  }
+  .chart-box {
+    background: #f4f7fa; border: 1px solid #c6d0da; border-radius: 5px; padding: 10px 12px 6px;
+    min-width: 0; overflow: hidden;
+  }
+  .chart-title {
+    font-size: 9pt; font-weight: 700; color: #1b2a4a; text-align: center; margin-bottom: 4px;
+  }
+  .chart-container { position: relative; width: 100%; height: 200px; overflow: hidden; }
+  .chart-container canvas { max-width: 100%; }
+  .stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 12px 0;
+  }
+  .stat-box {
+    background: #f0f4f8; border-radius: 5px; padding: 10px 8px; text-align: center;
+  }
+  .stat-num { font-size: 18pt; font-weight: 800; color: #c0392b; line-height: 1.1; }
+  .stat-label { font-size: 8pt; color: #5a6a7a; line-height: 1.3; margin-top: 2px; }
+  .callout {
+    background: #fdf6f0; border-left: 3px solid #2c6e8a;
+    padding: 8px 12px; margin: 12px 0; font-size: 9.5pt;
+  }
+  .callout strong { color: #2c6e8a; }
+  .forecast-box {
+    background: #eef3e8; border-left: 3px solid #2e7d32;
+    padding: 8px 12px; margin: 12px 0; font-size: 9.5pt;
+  }
+  .forecast-box strong { color: #2e7d32; }
+  table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6px 0 10px;
+  }
+  th {
+    background: #1b2a4a; color: #fff; font-weight: 600;
+    padding: 5px 8px; text-align: left;
+  }
+  td { padding: 4px 8px; border-bottom: 1px solid #e0e4ea; vertical-align: top; }
+  tr:nth-child(even) td { background: #f5f7fa; }
+  .neg { color: #c0392b; font-weight: 600; }
+  .pos { color: #27ae60; font-weight: 600; }
+  .page-break { page-break-before: always; }
+  .sources-page { page-break-before: always; }
+  .sources-page h2 { margin-top: 6px; }
+  .sources-page ol { font-size: 8.5pt; color: #2c3e50; line-height: 1.55; padding-left: 18px; }
+  .sources-page li { margin-bottom: 3px; }
+  .sources-page a { color: #2471a3; text-decoration: none; word-break: break-all; }
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+
+<h1>Brands Are Spending More to Acquire Customers Who Are Less Likely to Come Back</h1>
+<div class="subtitle">Why the Economics of Brand-Building Have Fundamentally Changed &nbsp;|&nbsp; Prepared March 2026 &nbsp;|&nbsp; Confidential</div>
+
+<h2>Thesis: It Costs More to Win Customers Who Don&rsquo;t Stay</h2>
+
+<p>The spirits customer acquisition &ldquo;funnel&rdquo;&mdash;the process of turning a stranger into a paying, repeat buyer&mdash;is broken on both ends. At the <strong>top of the funnel</strong> (reaching new consumers), costs are rising fast: digital advertising is up 50&ndash;100% from 2020&ndash;21 levels, influencer trust is eroding, and the wholesale distribution system has consolidated into so few companies that getting a bottle onto a store shelf or behind a bar now requires substantial upfront investment. At the <strong>bottom of the funnel</strong> (keeping those customers), loyalty has collapsed: only 41% of spirits consumers call themselves brand loyal, and the generation entering the market&mdash;Gen Z&mdash;samples twice as many brands as their parents. The marketing math that built spirits brands for the last decade no longer works.</p>
+
+<div class="forecast-box">
+<strong>Our Forecast:</strong> The customer acquisition crisis accelerates through 2028. Expect 30&ndash;40% of current craft distillers to exit (25% already left in 2024&ndash;25). Brands that lack a direct path to the consumer&mdash;whether through their own tasting rooms, online sales, membership clubs, or control of their distribution&mdash;will not survive the economics. The winners will be large vertically integrated producers who control costs, and the brands&mdash;large or small&mdash;that build a loyal following through direct engagement (events, membership clubs, compelling content) rather than paying for ads and shelf space. <em>See detailed forecast below.</em>
+</div>
+
+<div class="stats">
+  <div class="stat-box">
+    <div class="stat-num">41%</div>
+    <div class="stat-label">of spirits consumers<br/>describe themselves as brand loyal<br/>(vs. 51% for beer)</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">0.10%</div>
+    <div class="stat-label">Average social media<br/>engagement rate for<br/>alcohol brands</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num">&minus;25.6%</div>
+    <div class="stat-label">Decline in active U.S.<br/>craft distillers in a<br/>single year (2024&ndash;25)</div>
+  </div>
+</div>
+
+<h2>Rising Costs, Declining Effectiveness</h2>
+
+<div class="charts">
+  <div class="chart-box">
+    <div class="chart-title">Fig. 1: Brand Loyalty by Alcohol Category (% Who Say They Are Brand Loyal)</div>
+    <div class="chart-container"><canvas id="chart1"></canvas></div>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">Fig. 2: The Squeeze &mdash; Social Media CPM vs. Engagement Rate</div>
+    <div class="chart-container"><canvas id="chart2"></canvas></div>
+  </div>
+</div>
+
+<p>The economics are clear in the aggregate. Diageo&mdash;the world&rsquo;s largest spirits company&mdash;increased global marketing spend 12% to roughly $3.8 billion in 2023, yet net sales <em>declined</em> 0.6%. More money in, less revenue out. U.S. spirits supplier revenue fell 2.2% in 2025 to $36.4 billion even as volume rose 1.9%&mdash;meaning consumers are buying more bottles but spending less per bottle. The decade-long trend of consumers trading up to premium brands has reversed.</p>
+
+<p>On social media, alcohol industry engagement averages just <strong>0.10% per post</strong> (Rival IQ, 2025)&mdash;meaning for every 1,000 followers a brand has cultivated, one person engages. Instagram engagement rates dropped from 2.18% in 2021 to 1.59% in 2024&mdash;a <strong>27% decline</strong>. Meanwhile, Facebook ad CPMs (cost per thousand impressions) for wine and spirits roughly doubled between 2020 and 2025. Brands are paying substantially more to reach fewer people who care less.</p>
+
+<h2>The Distribution Bottleneck</h2>
+
+<p>The three-tier system&mdash;the legally mandated structure requiring producers to sell through distributors to reach retailers&mdash;has consolidated into a near-duopoly. Southern Glazer&rsquo;s Wine &amp; Spirits (SGWS) dominates U.S. wholesale, and the landscape behind it is in upheaval: RNDC (Republic National Distributing Company), once the clear #2, exited California in 2025, lost major suppliers like Tito&rsquo;s and Brown-Forman, and is selling operations in seven additional states to Reyes Beverage Group. The concentration is <strong>increasing, not decreasing</strong>. SGWS alone carries over <strong>7,000 individual brands</strong>. A single sales rep manages 150&ndash;300 active products, and their bonus compensation is tied to &ldquo;priority&rdquo; brands&mdash;almost always the large suppliers funding promotional programs. A new brand without significant trade investment gets what insiders call &ldquo;the warehouse shelf&rdquo;&mdash;technically distributed, practically invisible.</p>
+
+<p>Getting off that warehouse shelf requires substantial investment: programming funds to incentivize the distributor&rsquo;s sales team, depletion allowances (per-case payments for moving product), sample budgets, promotional pricing, and repeated market visits. These costs must be replicated in every market a brand enters. The economics are punishing for new entrants&mdash;especially in categories where brand loyalty is low (just 27% for tequila, 37% for whiskey), meaning a large share of hard-won customers will not come back for a second bottle.</p>
+
+<h2>The Generational Loyalty Problem</h2>
+
+<p>Gen Z is not simply &ldquo;less loyal&rdquo;&mdash;they are <strong>structurally disloyal</strong> in ways that break traditional lifetime value models. Consumer research shows Gen Z samples at least <strong>twice the number of brands annually</strong> as older generations and is active in 3&ndash;4 more beverage categories simultaneously. At bars and restaurants, Gen Z tries an average of <strong>11 spirits brands and 5 drink categories</strong> per occasion&mdash;more than any other cohort. They are highly acquirable as trial purchasers but far less likely to become loyal repeat buyers.</p>
+
+<p>Meanwhile, overall consumption frequency is falling: average U.S. drinks per week dropped from <strong>four to three</strong> between 2023 and 2024. Four in ten Gen Z drinkers are &ldquo;mindful&rdquo; about consumption; three in ten actively limit intake. Fewer drinking occasions spread across more brands means every variable in the customer lifetime value equation is moving in the wrong direction.</p>
+
+<!-- PAGE 2 -->
+<div class="page-break"></div>
+
+<h2>The Influencer Trust Crisis</h2>
+
+<p>Spirits brands leaned heavily into influencer marketing as a primary acquisition channel. That channel is now in structural trouble. Trust in influencers dropped <strong>5 percentage points</strong> in a single year (2023&ndash;24). Only <strong>11% of consumers</strong> now prefer celebrity endorser personalities, down from 17&ndash;22% in 2020. Meanwhile, 81.2% of influencer marketers report it is harder to get the same return from collaborations compared to prior years. For spirits brands that built strategies around celebrity founders&mdash;particularly in tequila&mdash;the timing is acute: the channel is losing effectiveness precisely as competition within it has peaked.</p>
+
+<p>The platform landscape makes it worse. Alcohol advertising is prohibited or severely restricted on several major platforms. TikTok only began permitting alcohol ads in a limited beta in July 2024, with a mandatory 25+ age floor&mdash;meaning spirits brands were locked out of the highest-engagement social platform (average 18% engagement vs. Instagram&rsquo;s 2.4%) as it rose to dominance. Google restricted 34.2 million alcohol ads and removed 10.9 million in 2024.</p>
+
+<h2>What&rsquo;s Working: Four Patterns</h2>
+
+<table>
+<thead>
+<tr><th style="width:22%">Strategy</th><th style="width:30%">Example</th><th style="width:48%">Why It Works</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Community before campaign</strong></td><td>Hendrick&rsquo;s &ldquo;Society of the Unusual&rdquo;; distillery founders&rsquo; clubs</td><td>Builds an identity-based audience that self-replicates through advocacy. Reduces dependence on expensive paid advertising.</td></tr>
+<tr><td><strong>Smaller, authentic voices over celebrities</strong></td><td>73% of brands now prefer partnering with smaller-audience creators over big names</td><td>Creators with modest followings get nearly 3x the audience engagement of celebrities&mdash;at a fraction of the cost. Authenticity outperforms fame.</td></tr>
+<tr><td><strong>Owned occasion</strong></td><td>The Spicy Margarita for tequila; the Espresso Martini for coffee liqueurs</td><td>When a brand &ldquo;owns&rdquo; a cocktail occasion, the consumer is pre-selected by the recipe&mdash;not re-chosen by loyalty each time.</td></tr>
+<tr><td><strong>Sell fast in fewer places</strong></td><td>Regional craft brands with concentrated footprints</td><td>Selling well in a smaller number of stores keeps distributors engaged. Spreading thin across many stores with slow sales leads to being dropped from shelves.</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<strong>The common thread:</strong> Every brand succeeding in this environment has found a way to make consumers come to them&mdash;generating pull rather than purchasing push through the increasingly expensive three-tier and digital channels. The funnel isn&rsquo;t fixable at current economics. The answer is to build around it.
+</div>
+
+<h2>Forecast Summary: 2026&ndash;2028</h2>
+
+<p>The acquisition cost crisis is structural, not cyclical. Distributor consolidation tightens further. Digital advertising restrictions will not ease. Gen Z&rsquo;s brand promiscuity is a permanent feature, not a phase. The craft distillery shakeout (25.6% gone in one year) accelerates&mdash;expect the total to shrink by <strong>40&ndash;50% from the 2023 peak</strong> by 2028. The survivors are brands with DTC (direct-to-consumer) channels, owned occasions, or community-driven acquisition. Large producers absorb market share by default. <em>See detailed forecast below.</em></p>
+
+<!-- SOURCES -->
+<div class="sources-page">
+<h2>Sources</h2>
+<ol>
+<li>DISCUS, 2025 Annual Economic Briefing &mdash; <a href="https://distilledspirits.org/news/distilled-spirits-council-annual-economic-briefing-spirits-industry-holds-steady-in-market-share-amid-economic-challenges-in-2024/">distilledspirits.org</a></li>
+<li>The Spirits Business, &ldquo;Spirits Sales Fall 2.2% in US in 2025&rdquo; &mdash; <a href="https://www.thespiritsbusiness.com/2026/02/spirits-sales-fall-2-2-in-us-in-2025/">thespiritsbusiness.com</a></li>
+<li>Statista, &ldquo;Alcohol Brand Loyalty by Segment, U.S. 2023&rdquo; &mdash; <a href="https://www.statista.com/statistics/1336982/us-alcohol-brand-loyalty-by-segment/">statista.com</a></li>
+<li>Numerator, &ldquo;Gen Z Drinking Trends&rdquo; &mdash; <a href="https://www.numerator.com/resources/blog/gen-z-drinking-trends/">numerator.com</a></li>
+<li>CGA Strategy, &ldquo;Five Consumer Trends Shaping 2025 US On-Premise Spirit Sales&rdquo; &mdash; <a href="https://cgastrategy.com/five-consumer-trends-shaping-2025-us-on-premise-spirit-sales/">cgastrategy.com</a></li>
+<li>Rival IQ, &ldquo;Alcohol Industry Social Media Benchmarks&rdquo; (live data) &mdash; <a href="https://www.rivaliq.com/live-benchmarks/alcohol-industry-benchmarks/">rivaliq.com</a></li>
+<li>Influencer Marketing Hub, &ldquo;Benchmark Report 2025&rdquo; &mdash; <a href="https://influencermarketinghub.com/influencer-marketing-benchmark-report/">influencermarketinghub.com</a></li>
+<li>Clutch.co, &ldquo;Why Trust in Influencers Is Declining&rdquo; &mdash; <a href="https://clutch.co/resources/trust-in-influencers">clutch.co</a></li>
+<li>eMarketer, &ldquo;US Social Ad CPMs Forecast 2025&rdquo; &mdash; <a href="https://www.emarketer.com/content/us-social-ad-cpms-forecast-2025">emarketer.com</a></li>
+<li>Superads.ai, &ldquo;Facebook Ads CPM Benchmarks for Wine &amp; Spirits 2025&rdquo; &mdash; <a href="https://www.superads.ai/facebook-ads-costs/cpm-cost-mille/wine-and-spirits/brand-awareness">superads.ai</a></li>
+<li>Marketing Brew, &ldquo;TikTok Alcohol Advertising&rdquo; (Aug 2024) &mdash; <a href="https://www.marketingbrew.com/stories/2024/08/12/tiktok-allow-alcohol-advertisers-where-are-they">marketingbrew.com</a></li>
+<li>Diageo, FY2024 Preliminary Results &mdash; <a href="https://www.diageo.com/en/news-and-media/press-releases/2024/2024-preliminary-results-year-ended-30-june-2024">diageo.com</a></li>
+<li>Statista, &ldquo;Diageo Marketing Spending Worldwide 2023&rdquo; &mdash; <a href="https://www.statista.com/statistics/314430/diageo-marketing-spending-worldwide/">statista.com</a></li>
+<li>Shanken News Daily, &ldquo;Top U.S. Distributors Projecting Growth Despite Challenging Conditions&rdquo; (Apr 2024) &mdash; <a href="https://www.shankennewsdaily.com/2024/04/18/35197/top-u-s-distributors-projecting-growth-despite-challenging-conditions/">shankennewsdaily.com</a></li>
+<li>Park Street Imports, &ldquo;Spirits Distributors&rsquo; Tips for Brands in 2024&rdquo; &mdash; <a href="https://www.parkstreet.com/whats-trending-spirits-distributors-tips-for-brands-in-2024/">parkstreet.com</a></li>
+<li>Craft Spirits Magazine / ACSA, &ldquo;Craft Spirits Sales in Decline&rdquo; (Sep 2024) &mdash; <a href="https://craftspiritsmag.com/2024/09/17/craft-spirits-sales-in-decline-for-first-time-in-recent-history/">craftspiritsmag.com</a></li>
+<li>The Spirits Business, &ldquo;US Craft Distillery Numbers Drop 25%&rdquo; (Oct 2025) &mdash; <a href="https://www.thespiritsbusiness.com/2025/10/us-craft-distillery-numbers-drop-25/">thespiritsbusiness.com</a></li>
+<li>IWSR, &ldquo;Does Innovation Add Value?&rdquo; &mdash; <a href="https://www.theiwsr.com/does-innovation-add-value/">theiwsr.com</a></li>
+<li>NielsenIQ / CGA, &ldquo;From Bar to Brand: Unlocking Bartender Engagement&rdquo; (2025) &mdash; <a href="https://nielseniq.com/global/en/insights/analysis/2025/from-bar-to-brand-how-to-unlock-bartender-engagement/">nielseniq.com</a></li>
+<li>Penn State Extension, &ldquo;Alcoholic Beverage Consumption and Purchasing Trends 2024&rdquo; &mdash; <a href="https://extension.psu.edu/alcoholic-beverage-consumption-and-purchasing-trends-2024">extension.psu.edu</a></li>
+<li>OhBev, &ldquo;Gen Z Alcohol Trends&rdquo; &mdash; <a href="https://www.ohbev.com/blog/gen-z-alcohol-trends-consumption-and-marketing">ohbev.com</a></li>
+<li>Libdib, &ldquo;The Hidden Costs of Wholesale Alcohol Distribution&rdquo; &mdash; <a href="https://blog.libdib.com/the-hidden-costs-of-distribution-2">libdib.com</a></li>
+<li>Wine Business Monthly, &ldquo;The State of Distribution in 2024&rdquo; &mdash; <a href="https://www.winebusiness.com/wbm/article/297351">winebusiness.com</a></li>
+<li>Robb Report, &ldquo;Spirits Sales in America Are Down&rdquo; &mdash; <a href="https://robbreport.com/food-drink/spirits/spirits-sales-in-america-down-report-1235613804/">robbreport.com</a></li>
+<li>Crowdly, &ldquo;Hendrick&rsquo;s Gin Case Study&rdquo; &mdash; <a href="https://crowdly.com/case-studies-hendricks-gin">crowdly.com</a></li>
+</ol>
+</div>
+
+<!-- FORECAST DETAIL -->
+<div class="page-break"></div>
+
+<h2>Forecast Detail: The Acquisition Shakeout 2026&ndash;2028</h2>
+
+<table style="width:100%;">
+<tr><th style="width:12%">Year</th><th style="width:30%">Acquisition Economics</th><th style="width:58%">Market Signal</th></tr>
+<tr><td>2026</td><td>Crisis deepens</td><td>Craft distillery closures accelerate; digital advertising costs continue rising; SGWS and RNDC accelerate dropping underperforming brands from their portfolios</td></tr>
+<tr><td>2027</td><td>Shakeout peaks</td><td>40&ndash;50% of 2023-peak craft distillers have exited; surviving brands show stronger unit economics; DTC spirits shipping expands to 15&ndash;20 states (up from ~10 today)</td></tr>
+<tr><td>2028</td><td>New equilibrium</td><td>Fewer brands, healthier margins for survivors; community-driven and DTC models prove viable at scale; large producers consolidate market share gains</td></tr>
+</table>
+
+<p><strong>Who wins:</strong> Large vertically integrated producers (Diageo, Pernod Ricard, Brown-Forman, Beam Suntory) absorb share by default as smaller competitors exit. Among independents, brands with direct consumer relationships&mdash;distillery tasting rooms, membership clubs, owned digital communities&mdash;survive because their acquisition cost is a fraction of the three-tier-dependent model. The &ldquo;owned occasion&rdquo; strategy (a cocktail recipe that pre-selects the brand) emerges as the most capital-efficient path to loyalty.</p>
+
+<p><strong>Who loses:</strong> Mid-size brands trapped between craft authenticity and corporate scale&mdash;too large for tasting-room economics, too small for distributor priority. Celebrity-backed brands without genuine founder involvement. Any brand whose primary acquisition strategy is paid digital media without a direct path to purchase.</p>
+
+<p><strong>Key risks:</strong> Tariff escalation raises costs across the import-dependent categories (tequila, Scotch, Cognac), further pressuring consumer spending. Continued alcohol moderation trends reduce total occasions. If state-level DTC spirits shipping legislation stalls, the most promising alternative acquisition channel remains blocked for the majority of the market.</p>
+
+<script>
+// Chart 1: Brand Loyalty by Category
+new Chart(document.getElementById('chart1').getContext('2d'), {
+  type: 'bar',
+  data: {
+    labels: ['Beer', 'Wine', 'Whiskey', 'Vodka', 'Tequila'],
+    datasets: [{
+      label: '% Brand Loyal',
+      data: [58, 37, 37, 36, 27],
+      backgroundColor: ['#2c6e8a', '#3a8fb7', '#5aabcc', '#7dbfda', '#c0392b'],
+      borderRadius: 3,
+      barPercentage: 0.6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.raw + '% brand loyal' } }
+    },
+    scales: {
+      x: { ticks: { font: { size: 8 }, callback: v => v + '%' }, grid: { color: '#eae6e1' }, min: 0, max: 70 },
+      y: { ticks: { font: { size: 9, weight: 'bold' } }, grid: { display: false } }
+    }
+  }
+});
+
+// Chart 2: CPM vs Engagement Rate
+new Chart(document.getElementById('chart2').getContext('2d'), {
+  type: 'bar',
+  data: {
+    labels: ['2020-21', '2022', '2023', '2024-25'],
+    datasets: [
+      {
+        label: 'Avg. CPM (USD)',
+        data: [5.5, 8.0, 10.0, 11.0],
+        backgroundColor: '#c0392b',
+        borderRadius: 3,
+        barPercentage: 0.5,
+        yAxisID: 'y'
+      },
+      {
+        label: 'Instagram Engagement %',
+        data: [2.18, 1.90, 1.70, 1.59],
+        type: 'line',
+        borderColor: '#2c6e8a',
+        backgroundColor: '#2c6e8a',
+        pointRadius: 5,
+        pointBackgroundColor: '#2c6e8a',
+        borderWidth: 2.5,
+        tension: 0.3,
+        yAxisID: 'y1'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 8 }, boxWidth: 12, padding: 8 } },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            if (ctx.dataset.yAxisID === 'y') return 'CPM: $' + ctx.raw.toFixed(2);
+            return 'Engagement: ' + ctx.raw.toFixed(2) + '%';
+          }
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { font: { size: 8 } }, grid: { display: false } },
+      y: {
+        position: 'left',
+        ticks: { font: { size: 8 }, callback: v => '$' + v },
+        grid: { color: '#eae6e1' },
+        min: 0, max: 14,
+        title: { display: true, text: 'CPM (USD)', font: { size: 7 }, color: '#c0392b' }
+      },
+      y1: {
+        position: 'right',
+        ticks: { font: { size: 8 }, callback: v => v + '%' },
+        grid: { display: false },
+        min: 0, max: 3.0,
+        title: { display: true, text: 'Engagement %', font: { size: 7 }, color: '#2c6e8a' }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
